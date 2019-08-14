@@ -6,13 +6,13 @@ import Header from "./Header"
 function App() {
   //check update time, look for UTC offset
   const today = new Date();
-  console.log(today);
+  // console.log(today);
   const currYear = today.getFullYear();
-  console.log(currYear);
+  // console.log(currYear);
   const currMonth = today.getMonth();
-  console.log(currMonth);
+  // console.log(currMonth);
   const currDate = today.getDate();
-  console.log (currDate);
+  // console.log (currDate);
 
   const isoDate = () => {
     let adjustMonth = currMonth + 1;
@@ -24,7 +24,7 @@ function App() {
     return txtDate;
   }
 
-  console.log(isoDate());
+  // console.log(isoDate());
 
   const monthsArray = [
     "January",
